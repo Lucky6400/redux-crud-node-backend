@@ -1,0 +1,49 @@
+.todo-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 50px;
+  justify-content: center;
+  height: 400px;
+  overflow: scroll;
+  margin-bottom: 100px;
+}
+body{
+  background: url(./bg-todo.jpg);
+  background-size: 100% 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.todo-card{
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(0, 0, 0, 0.208);
+  color: black;
+  background: rgba(49, 49, 49, 0.247);
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.card-title{
+  height: 100px;
+  overflow: scroll;
+}
+.card-description{
+  height: 30px;
+}
+.btn-danger:focus, .btn-dark:focus{
+  animation-name: anim;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes anim {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
